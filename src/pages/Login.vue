@@ -16,7 +16,9 @@
         class="w-full border p-2 rounded"
         required
       />
-      <button class="w-full border p-2 rounded hover:bg-gray-50" type="submit">Sign in</button>
+      <button class="w-full border p-2 rounded hover:bg-gray-50 cursor-pointer" type="submit">
+        Sign in
+      </button>
       <p class="text-sm text-gray-500">Use any email/password — mock auth.</p>
     </form>
   </div>
@@ -27,8 +29,8 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 
-const email = ref('user@example.com')
-const password = ref('secret123')
+const email = ref('')
+const password = ref('')
 const auth = useAuthStore()
 const router = useRouter()
 
